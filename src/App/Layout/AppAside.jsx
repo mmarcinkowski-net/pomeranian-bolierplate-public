@@ -17,6 +17,12 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
+            <NavLink className="aside-row" to="cv">
+              <HouseIcon className="menu-icon" />
+              CV
+            </NavLink>
+          </li>
+          <li>
             <NavLink className="aside-row" to="blocks">
               <ElementIcon className="menu-icon" />
               Bloki
