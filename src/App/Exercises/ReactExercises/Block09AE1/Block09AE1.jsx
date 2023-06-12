@@ -9,6 +9,8 @@ export function Block09AE1() {
   // eslint-disable-next-line
   const [stateBtn, setStateBtn] = useState(true);
   const [visibleTxt, setVisibleTxt] = useState('Hide');
+  // eslint-disable-next-line
+  const [answer, setAnswer] = useState('Nie');
 
   function clickHandler() {
     let currentClick = clicks + 1;
@@ -32,6 +34,16 @@ export function Block09AE1() {
     setStateBtn(!currentState);
   }
 
+  function answerChangeHandler(ev) {
+    let currentAnswer = ev.target.value;
+
+    if (currentAnswer > 10) {
+      setAnswer('Tak');
+    } else {
+      setAnswer('Nie');
+    }
+  }
+
   return (
     <div>
       <p>Jestem blok 09 AE1</p>
@@ -42,11 +54,22 @@ export function Block09AE1() {
         </button>
       </p>
       <p>
-        <h2>See or not</h2>
+        <h1>See or not</h1>
         <button className="btn09" onClick={clickVisibleHandler}>
           {visibleTxt}
         </button>
         {stateBtn && <p>Teraz mnie widać</p>}
+      </p>
+      <p>
+        <h1>Czy A jest większe od 10?</h1>
+        <input
+          placeholder="A"
+          type="number"
+          onChange={answerChangeHandler}
+        ></input>
+        <h2>
+          Odpowiedź: <span style={{ color: 'red' }}>{answer}</span>
+        </h2>
       </p>
     </div>
   );
