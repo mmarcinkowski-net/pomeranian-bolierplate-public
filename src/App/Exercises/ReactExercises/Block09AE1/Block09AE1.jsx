@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import './style.css';
 import { MoreOrLessAdvanced } from '../MoreOrLessAdvanced/MoreOrLessAdvanced';
+import { MoreOrLessGameAdmin } from '../MoreOrLessGameAdmin/MoreOrLessGameAdmin';
 
 export function Block09AE1() {
   // eslint-disable-next-line
@@ -74,6 +75,9 @@ export function Block09AE1() {
       </div>
       <div>
         <MoreOrLessAdvanced />
+      </div>
+      <div>
+        <MoreOrLessGameAdmin />
       </div>
     </div>
   );
