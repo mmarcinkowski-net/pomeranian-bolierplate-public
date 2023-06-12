@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './style.css';
+import { MoreOrLessAdvanced } from '../MoreOrLessAdvanced/MoreOrLessAdvanced';
 
 export function Block09AE1() {
   // eslint-disable-next-line
@@ -47,20 +48,20 @@ export function Block09AE1() {
   return (
     <div>
       <p>Jestem blok 09 AE1</p>
-      <p>
+      <div>
         <h1>Kliknij 5</h1>
         <button className="btn09" onClick={clickHandler}>
           {btnText}
         </button>
-      </p>
-      <p>
+      </div>
+      <div>
         <h1>See or not</h1>
         <button className="btn09" onClick={clickVisibleHandler}>
           {visibleTxt}
         </button>
         {stateBtn && <p>Teraz mnie widać</p>}
-      </p>
-      <p>
+      </div>
+      <div>
         <h1>Czy A jest większe od 10?</h1>
         <input
           placeholder="A"
@@ -70,7 +71,10 @@ export function Block09AE1() {
         <h2>
           Odpowiedź: <span style={{ color: 'red' }}>{answer}</span>
         </h2>
-      </p>
+      </div>
+      <div>
+        <MoreOrLessAdvanced />
+      </div>
     </div>
   );
 }
