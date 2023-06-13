@@ -7,10 +7,10 @@ export const MoreOrLessAdvanced = () => {
   const [answer, setAnswer] = useState('');
 
   function isGreatherThan(a, b) {
-    if (!a || !b) {
-      setAnswer(' Uzupełnij dane ');
-      return;
-    }
+    // if (!a || !b) {
+    //   setAnswer(' Uzupełnij dane ');
+    //   return;
+    // }
 
     if (a > b) {
       setAnswer(a.concat(' jest większe od ', b));
