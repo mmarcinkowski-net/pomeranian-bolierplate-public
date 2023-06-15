@@ -1,3 +1,5 @@
+import { Author } from './Author/Author';
+import { Title } from './Title/Title';
 import './styles.css';
 
 export const Blog = () => {
@@ -5,7 +7,7 @@ export const Blog = () => {
     <div class="blog">
       <div class="blog-post">
         <span class="blog-post-date">30-11-2022</span>
-        <h2 class="blog-post-title">Why are we so nostalgic for the 1990s?</h2>
+        <Title text="Tytuł A" />
         <p>
           Pop culture used to define a generation, but it seems the cultural,
           music and fashion trends of the 1990s have been recycled, and what
@@ -17,15 +19,14 @@ export const Blog = () => {
           from which to enjoy the dulcet tones of everyone from Salt-N-Pepa to
           Rick Astley.
         </p>
-        <div class="blog-post-author">
-          Radosława Majdan
-          <br />
-          Senior Marketing Specialist
-        </div>
+        <Author name="Aaaa" position="as" />
       </div>
       <div class="blog-post">
         <span class="blog-post-date">30-11-2022</span>
-        <h2 class="blog-post-title">Why are we so nostalgic for the 1990s?</h2>
+        <Title text="Tytuł B" />
+        {/* <h2 class="blog-post-title">
+          18 Record-Breaking, Controversial, and Weird Facts{' '}
+        </h2> */}
         <p>
           Pop culture used to define a generation, but it seems the cultural,
           music and fashion trends of the 1990s have been recycled, and what
@@ -71,7 +72,7 @@ export const Blog = () => {
       </div>
       <div class="blog-post">
         <span class="blog-post-date">30-11-2022</span>
-        <h2 class="blog-post-title">Why are we so nostalgic for the 1990s?</h2>
+        <h2 class="blog-post-title">I make mistakes!</h2>
         <p>
           Pop culture used to define a generation, but it seems the cultural,
           music and fashion trends of the 1990s have been recycled, and what

@@ -22,6 +22,7 @@
 }
 
 .blog-post {
+  font-weight: normal;
 }
 
 .blog-post-title {
@@ -52,4 +53,19 @@ a.blog-link:visited {
 
 .blog-post:nth-child(n + 2) p:nth-child(n + 3) {
   font-size: 24px;
+}
+
+.blog-post:nth-child(1) {
+  background-color: aquamarine;
+}
+
+div.blog-post p:hover {
+  -webkit-box-shadow: 8px 8px 49px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 49px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 49px 0px rgba(66, 68, 90, 1);
+  padding: 10px;
+}
+
+div.blog-post:first-child p:hover {
+  font-size: 40px;
 }
